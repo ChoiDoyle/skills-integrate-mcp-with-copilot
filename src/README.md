@@ -47,4 +47,4 @@ The application uses a simple data model with meaningful identifiers:
    - Name
    - Grade level
 
-All data is stored in memory, which means data will be reset when the server restarts.
+Activities and sign-ups are stored in a SQLite database at `src/activities.sqlite` and remain available after the server restarts. Set the `ACTIVITIES_DB_PATH` environment variable to use a different database file. The database is initialized with the sample activities when it is first created.
